@@ -1,0 +1,429 @@
+* {
+  box-sizing: border-box;
+}
+
+/* topbar component */
+.topbar {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  height: 10vh;
+  align-items: center;
+  background-color: black;
+}
+
+.topbar-a {
+  text-decoration: none;
+}
+
+.right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.left p {
+  text-align: left;
+}
+
+.topbar-p {
+  /* border: 2px solid red; */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2vw;
+  color: white;
+  }
+
+.cart-card{
+  text-align: center;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  font-size: 20px;
+  height:50px;
+  align-items: center;
+}
+
+
+.cart-card-button{
+  font-size: 10px;
+}
+
+.cart-container-heading{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.cart-container-heading div{
+  text-align: center;
+}
+
+.cart-list-container h6{
+  margin-top: 20px;
+  font-size: x-large;
+  text-align: center;
+}
+
+.cart-list-pay{
+  text-align: center;
+}
+
+.cart-list-container h1,.cart-list-container h3{
+  text-align: center;
+}
+
+  
+  /* bzvbdfkhbakf */
+  
+.offer-icon {
+  margin-left: 5%;
+  margin-right: 4%;
+}
+    
+/* about component */
+
+.about {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: fit-content;
+  /* border: 2px solid red; */
+}
+
+.about h1 {
+  margin-top: 1%;
+  margin-left: 3%;
+}
+
+.about p {
+  margin-left: 3%;
+  /* border: 2px solid red; */
+}
+
+.speciality-block {
+  display: grid;
+  /* border: 2px solid red; */
+  grid-template-columns: 1fr 1fr;
+}
+
+.speciality-block p {
+  margin-left: 4%;
+  padding: 5px;
+}
+.cheif-block {
+  display: grid;
+  /* border: 2px solid red; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.cheif-block p {
+  margin-left: 6%;
+  padding: 5px;
+}
+
+/*Contact component */
+
+.contact {
+  margin: 0;
+  padding: 0;
+  border: 2px solid red;
+  width: 100vw;
+  min-height: fit-content;
+}
+
+.contact-up {
+  margin: 1%;
+  width: 98vw;
+  border: 2px solid rgb(19, 101, 22);
+  min-height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-left {
+  border: 2px solid red;
+}
+
+.contact-right {
+  background-color: aqua;
+  max-height: 75vh;
+}
+
+.contact-middle {
+  text-align: center;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.contact-down {
+  width: 90vw;
+  margin: auto;
+  border: 2px solid red;
+  padding: 0;
+}
+.contact-table {
+  margin: 0;
+}
+
+.policy{
+  margin: 0;
+  padding:0;
+  width: 100%;
+  height: fit-content;
+}
+
+.navbar{
+  margin: 0;
+  padding:0;
+  width: 100vw;
+  height: fit-content;
+}
+.policy-nav{
+  display: grid;
+  grid-template-columns: 10fr 3fr;
+  width:100vw;
+  height: 7vh;
+  align-items: center;
+  background-color:grey;
+  color:white;
+}
+
+.policy-nav-right{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.policy-nav-right a{
+  text-decoration: none;
+  color: white;
+}
+
+.policy-nav-right p{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.policy-nav-right button{
+  border: none;
+  background-color: grey;
+  color :white;
+}
+
+.policy-nav-left p{
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  padding-left: 10%;
+}
+
+.policy-nav p{
+  font-size:1.2vw;
+}
+
+.policy-content{
+  margin-top: 4%;
+  margin-left: 5%;
+}
+
+.policy-content h2{
+  margin-bottom: 2%;
+}
+
+.pizza{
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  margin-top:10px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  margin-right: 30px;
+}
+
+.pizza-details{
+  margin-top: 0;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: large;
+}
+
+.pizza-details-left{
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1.2fr 1fr;
+}
+
+.pizza-details-right{
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1.2fr 1fr;
+}
+
+.pizza select{
+  border-radius: 5px;
+  color:white;
+  background-color: rgb(59, 59, 166);
+  margin-left: 15%;
+  text-align: center;
+  width:70%;
+  margin-bottom: 5px;
+  font-size: small;
+}
+
+.pizza-price{
+  margin-top: 2%;
+  text-align: left;
+  margin-left: 10%;
+  font-size: large;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pizza-button{
+  width:50%;
+  border-radius: 10px;
+  height:10%;
+}
+
+.pizza-lower{
+  padding: 0;
+}
+
+.app-pizza-show{
+  display:flex;
+  flex-wrap: wrap;
+  margin-left: 3%;
+}
+
+.pizza-image{
+  height:150px;
+  border-radius: 5px;
+}
+
+.pizza-pop-heading{
+  text-align: center;
+}
+
+.pizza-pop-image{
+  border-radius: 10px;
+}
+
+.register{
+  margin: 0;
+  border:2px solid red;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.order-container{
+  border:2px solid red;
+  width: 100vw;
+  height:fit-content;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.order-card-view-button{
+  text-align: center;
+}
+
+.order-card-modal{
+  font-size: x-large;
+}
+
+.order-heading{
+  text-align: center;
+}
+
+.order-card{
+  margin: 0px 20px 5px 10px;
+}
+
+.admin-panel{
+  padding: 10px;
+  height:fit-content;
+  border: 2px solid red;
+}
+
+.admin-menu-button{
+  background-color: black;
+}
+.admin-menu{
+  border:2px solid red;
+  position: sticky;
+  top:10px;
+  width: fit-content;
+  padding: 0;
+}
+
+.admin-menu-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items:center;
+}
+
+.menu-grid-item{
+  text-decoration: none;
+  text-align: center;
+  font-size: x-large;
+  height: 70px;
+  color: white;
+  background-color: grey;
+  margin: 5px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.menu-canvas{
+  background-color: black;
+  color: white;
+}
+
+.menu-grid-item-title{
+  margin-top: 30px;
+  margin-bottom: 70px;
+  background-color: blueviolet;
+}
+
+.all-users{
+  text-align: center;
+}
+
+.all-user-delete{
+  cursor: pointer;
+}
+
+.all-pizzas{
+  text-align: center;
+  align-items: center;
+}
+
+.all-pizza-td{
+  margin-top: 20px;
+}
+.all-pizza-td-op{
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.all-pizza-span{
+  margin-left: 20px;
+}
+
+.update-pizza-1f{
+  padding: 0px 20px 0px 20px;
+}
+
+.update-pizza-2f{
+  display: flex;
+
+}
+
+.update-pizza-2f-content{
+  width: 30%;
+  margin-left: 2.3%;
+}
