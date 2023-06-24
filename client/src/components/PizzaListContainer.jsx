@@ -34,7 +34,6 @@ const PizzaListContainer = () => {
         <div className='app-pizza-show'>
         {show?pizzaList.map((item,index)=>(<Pizza pizza={item} key={index}/>)):<h1>Loading</h1>}
         </div>
-        <button onClick={clearClicker}>CLEAR CART</button>
     </div>
   )
 }
