@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { loginUser } from '../redux/actions/userAction';
 

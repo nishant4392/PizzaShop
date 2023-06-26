@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom';
-import { getCartList } from '../redux/actions/cartListAction';
+import { Link} from 'react-router-dom';
 import { logoutUser } from '../redux/actions/userAction';
 
 const Navbar = () => {
-    const navigate = useNavigate();
     const dispatch = useDispatch();
     const cartState = useSelector((state) => state.cartListManager);
     const cartList = cartState.cart;
@@ -15,9 +13,7 @@ const Navbar = () => {
 
     useEffect(() => {
         setCartLength(cartList.length);
-        console.log(user);
-        console.log("checking the user",user.isAdmin)
-    });
+    },[setCartLength,cartList.length]);
 
     const loggingOutUser = () => {
         dispatch(logoutUser("some data"));
@@ -57,6 +53,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-{/* <Link to="/cart" ><p>Cart-{cartLength}</p></Link>  
-<Link to="/orders" ><p>Orders</p></Link>
-<Link to="/"><p onClick={loggingOutUser}>Log Out</p></Link> */}

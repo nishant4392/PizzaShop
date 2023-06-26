@@ -21,7 +21,7 @@ const AdminPanel = () => {
     if(!user.isAdmin){
       navigate("/")
     }
-  },[])
+  },[navigate,user.isAdmin])
 
   return (
     <div className='admin-panel'>

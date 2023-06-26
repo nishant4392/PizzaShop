@@ -24,7 +24,7 @@ const CartListContainer = () => {
     if (user.show) {
       dispatch(getCartList(user._id));
     }
-  },[]);
+  },[dispatch,user.show,user._id]);
 
 
   return (

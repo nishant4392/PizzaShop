@@ -14,7 +14,7 @@ const AllPizza = () => {
 
   useEffect(() => {
     dispatch(getAllPizzaListAction());
-  }, [])
+  }, [dispatch])
 
   const updatingPizza = (item) => {
     dispatch(getPizzaToOperateOn(item));

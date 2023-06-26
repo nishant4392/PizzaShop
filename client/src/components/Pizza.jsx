@@ -18,17 +18,18 @@ const Pizza = (props) => {
   const pizza=props.pizza;
   const sizes=pizza.sizes;
 
+  const [variety,setVariety]=useState("Small");
+  const [quantity,setQuantity]=useState(1);
+  const [cost,setCost]=useState(0);
+  const [priceOfOne,setPriceOfOne]=useState(0)
+
   useEffect(()=>{
     let varCost=sizes.find((size)=>size.name===variety).price;
     let totalCost=varCost*quantity;
     setCost(totalCost);
     setPriceOfOne(varCost);
-  })
+  },[sizes,quantity,variety])
 
-  const [variety,setVariety]=useState("Small");
-  const [quantity,setQuantity]=useState(1);
-  const [cost,setCost]=useState(0);
-  const [priceOfOne,setPriceOfOne]=useState(0)
 
   const Clicker=()=>{
     console.log("the user is",user.show, user._id);
@@ -56,7 +57,7 @@ const Pizza = (props) => {
   return (
     <div className='pizza'>
     <Card style={{ width: '18rem' }}>
-      <Card.Img  onClick={handleShow} className='pizza-image' variant="top" src="https://tse1.mm.bing.net/th?id=OIP.Lr1GKEqWmmYqwhlBdrVMDQHaFj&pid=Api&P=0" />
+      <Card.Img  onClick={handleShow} className='pizza-image' variant="top" src="https://tse1.mm.bing.net/th?id=OIP.Lr1GKEqWmmYqwhlBdrVMDQHaFj&pid=Api&P=0" alt=''/>
       <Card.Body className='pizza-lower'>
         <Card.Title className='pizza-title'>{pizza.name}</Card.Title>
         <div className='pizza-details'>
@@ -70,7 +71,7 @@ const Pizza = (props) => {
 
     <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title><h2 className='pizza-pop-heading'>{pizza.name}</h2><img className='pizza-pop-image' src='https://tse1.mm.bing.net/th?id=OIP.Lr1GKEqWmmYqwhlBdrVMDQHaFj&pid=Api&P=0' alt='a image'></img></Modal.Title>
+          <Modal.Title><h2 className='pizza-pop-heading'>{pizza.name}</h2><img className='pizza-pop-image' src='https://tse1.mm.bing.net/th?id=OIP.Lr1GKEqWmmYqwhlBdrVMDQHaFj&pid=Api&P=0' alt=''></img></Modal.Title>
         </Modal.Header>
         <Modal.Body><h5>Description</h5><p>{pizza.description}</p></Modal.Body>
       </Modal>

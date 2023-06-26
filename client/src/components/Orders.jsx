@@ -13,9 +13,7 @@ const Orders = () => {
   useEffect(()=>{
     dispatch(getCartList(user._id));
     dispatch(getOrder(user._id));
-    console.log(order.orders);
-
-  },[])
+  },[dispatch,user._id])
 
   return (
     <>

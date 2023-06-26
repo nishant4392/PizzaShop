@@ -72,6 +72,7 @@ function* apiForCartList(action){
 
     result.map((item,index)=>{
         finalPrice=finalPrice+item.totalPrice
+        return null
     }) 
     finalPrice=Number(finalPrice.toFixed(2));
     yield put({

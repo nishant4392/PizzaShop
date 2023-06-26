@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { useState } from 'react';
@@ -8,11 +8,6 @@ import Modal from 'react-bootstrap/Modal';
 const OrderCard = (props) => {
     const order = props.order;
     const [show, setShow] = useState(false);
-    useEffect(()=>{
-        console.log("the order is",order);
-    })
-
-
     return (
         <div className='order-card'>
             <Card style={{ width: '30rem' }}>

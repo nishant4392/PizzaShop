@@ -9,8 +9,7 @@ const AllOrders = () => {
     const allOrders=useSelector((state)=>state.AllOrdersManager);
     useEffect(()=>{
         dispatch(getAllOrdersListAction("some data"));
-        console.log(allOrders.orders)
-    },[])
+    },[dispatch])
 
     const deletingOrder=(userId)=>{
         dispatch(deleteFromAllOrdersList(userId));

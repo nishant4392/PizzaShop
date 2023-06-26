@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getAllPizzaListAction } from '../redux/actions/pizzaListAction';
 import { useSelector } from 'react-redux';
-import { clearCart, getCartList } from '../redux/actions/cartListAction';
+import { getCartList } from '../redux/actions/cartListAction';
 import Pizza from './Pizza';
 
 const PizzaListContainer = () => {
@@ -18,16 +18,7 @@ const PizzaListContainer = () => {
       if(user.show){
         dispatch(getCartList(user._id));
       }     
-    },[])
-
-    const clearClicker=()=>{
-      if(user.show){
-        dispatch(getCartList(user._id));
-        dispatch(clearCart(user._id));
-        dispatch(getCartList(user._id));
-      }
-    }
-
+    },[dispatch,user.show,user._id])
 
   return (
     <div>

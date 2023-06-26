@@ -10,22 +10,16 @@ import Order from "./components/Orders";
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getAllPizzaListAction } from './redux/actions/pizzaListAction';
-import { useSelector } from 'react-redux';
-import { getCartList } from './redux/actions/cartListAction';
 import PizzaListContainer from './components/PizzaListContainer';
 import CartListContainer from './components/CartListContainer';
 import Register from './components/Register';
 import AdminPanel from './components/AdminPanel';
-import AllUsers from './components/AllUsers';
 
 function App() {
   const dispatch = useDispatch();
-  const pizzaState = useSelector((state) => state.getAllPizzaListManager);
-  const show = pizzaState.show;
-  const pizzaList = pizzaState.pizzas;
   useEffect(() => {
     dispatch(getAllPizzaListAction("just some saga testing data"));
-  }, [])
+  }, [dispatch])
 
 
   return (

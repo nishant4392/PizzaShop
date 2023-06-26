@@ -9,7 +9,7 @@ const AllUsers = () => {
     const allUsers = useSelector((state) => state.allUserManager);
     useEffect(() => {
         dispatch(getAllUsers("some data"));
-    }, [])
+    }, [dispatch])
 
     const deleteUser = (id) => {
         dispatch(deleteFromAllUser(id));

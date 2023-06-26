@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import StripeCheckout from "react-stripe-checkout";
 import { Button } from "react-bootstrap"
 import { useDispatch, useSelector } from 'react-redux';
@@ -20,7 +20,7 @@ const CheckOut = (props) => {
   useEffect(()=>{
     dispatch(getOrder(user._id));
     dispatch(getCartList(user._id))
-  },[])
+  },[dispatch,user._id])
 
   const tokenHandler = async (token) => {
     console.log("the token is--", token);

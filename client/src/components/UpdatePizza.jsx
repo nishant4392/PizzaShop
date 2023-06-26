@@ -18,7 +18,6 @@ const UpdatePizza = () => {
   const [description,setDescription]=useState("");
 
   useEffect(()=>{
-    console.log("the pizza is",pizza);
     if(pizza._id){
       setName(pizza.name);
       setSmall(pizza.sizes[0].price);
@@ -31,7 +30,7 @@ const UpdatePizza = () => {
       alert("Something bad happened, so you will be redirected to the previous page")
       navigate("/admin-panel/all-pizzas/");
     }
-  },[])
+  },[navigate,pizza])
 
   const updatePizzaHandler=()=>{
     let objectToSend={
