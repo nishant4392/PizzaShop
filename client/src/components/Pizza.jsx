@@ -73,8 +73,6 @@ const Pizza = (props) => {
           <Modal.Title><h2 className='pizza-pop-heading'>{pizza.name}</h2><img className='pizza-pop-image' src='https://tse1.mm.bing.net/th?id=OIP.Lr1GKEqWmmYqwhlBdrVMDQHaFj&pid=Api&P=0' alt='a image'></img></Modal.Title>
         </Modal.Header>
         <Modal.Body><h5>Description</h5><p>{pizza.description}</p></Modal.Body>
-        {/* <Modal.Footer>
-        </Modal.Footer> */}
       </Modal>
     </div>
   )

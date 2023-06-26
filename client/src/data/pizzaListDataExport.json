@@ -1,0 +1,337 @@
+[{
+  "_id": {
+    "$oid": "63fe231c6dbce2dae68b80cb"
+  },
+  "name": "Margeretta",
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 23
+    },
+    {
+      "name": "Medium",
+      "price": 70
+    },
+    {
+      "name": "Large",
+      "price": 93
+    }
+  ],
+  "category": "veg",
+  "description": "Can be eaten"
+},{
+  "_id": {
+    "$oid": "63fe231c6dbce2dae68b80cc"
+  },
+  "name": "Pepperoni",
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 7.99
+    },
+    {
+      "name": "Medium",
+      "price": 12.99
+    },
+    {
+      "name": "Large",
+      "price": 16.99
+    }
+  ],
+  "category": "Non-Veg",
+  "description": "Tomato sauce, cheese, and pepperoni slices"
+},{
+  "_id": {
+    "$oid": "63fe231c6dbce2dae68b80cd"
+  },
+  "name": "Veggie Supreme",
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 8.99
+    },
+    {
+      "name": "Medium",
+      "price": 13.99
+    },
+    {
+      "name": "Large",
+      "price": 18.99
+    }
+  ],
+  "category": "Veg",
+  "description": "Tomato sauce, cheese, mushrooms, onions, green peppers, and black olives"
+},{
+  "_id": {
+    "$oid": "63fe231c6dbce2dae68b80ce"
+  },
+  "name": "Meat Lovers",
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 9.99
+    },
+    {
+      "name": "Medium",
+      "price": 14.99
+    },
+    {
+      "name": "Large",
+      "price": 19.99
+    }
+  ],
+  "category": "Non-Veg",
+  "description": "Tomato sauce, cheese, pepperoni, ham, bacon, and Italian sausage"
+},{
+  "_id": {
+    "$oid": "63fe231c6dbce2dae68b80cf"
+  },
+  "name": "Hawaiian",
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 8.99
+    },
+    {
+      "name": "Medium",
+      "price": 13.99
+    },
+    {
+      "name": "Large",
+      "price": 18.99
+    }
+  ],
+  "category": "Non-Veg",
+  "description": "Tomato sauce, cheese, ham, and pineapple"
+},{
+  "_id": {
+    "$oid": "63fe231c6dbce2dae68b80d0"
+  },
+  "name": "BBQ Chicken",
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 9.99
+    },
+    {
+      "name": "Medium",
+      "price": 14.99
+    },
+    {
+      "name": "Large",
+      "price": 19.99
+    }
+  ],
+  "category": "Non-Veg",
+  "description": "BBQ sauce, cheese, grilled chicken, and onions"
+},{
+  "_id": {
+    "$oid": "63fe231c6dbce2dae68b80d1"
+  },
+  "name": "Mushroom",
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 7.99
+    },
+    {
+      "name": "Medium",
+      "price": 12.99
+    },
+    {
+      "name": "Large",
+      "price": 16.99
+    }
+  ],
+  "category": "Veg",
+  "description": "Tomato sauce, cheese, and fresh mushrooms"
+},{
+  "_id": {
+    "$oid": "63fe231c6dbce2dae68b80d2"
+  },
+  "name": "Spinach & Feta",
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 8.99
+    },
+    {
+      "name": "Medium",
+      "price": 13.99
+    },
+    {
+      "name": "Large",
+      "price": 18.99
+    }
+  ],
+  "category": "Veg",
+  "description": "Tomato sauce, cheese, spinach, and feta cheese"
+},{
+  "_id": {
+    "$oid": "63fe231c6dbce2dae68b80d3"
+  },
+  "name": "Margherita",
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 6.99
+    },
+    {
+      "name": "Medium",
+      "price": 10.99
+    },
+    {
+      "name": "Large",
+      "price": 14.99
+    }
+  ],
+  "category": "Veg",
+  "description": "Classic cheese and tomato pizza with fresh basil"
+},{
+  "_id": {
+    "$oid": "63fe231c6dbce2dae68b80d4"
+  },
+  "name": "Pepperoni",
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 7.99
+    },
+    {
+      "name": "Medium",
+      "price": 12.99
+    },
+    {
+      "name": "Large",
+      "price": 16.99
+    }
+  ],
+  "category": "Non-Veg",
+  "description": "Tomato sauce, cheese, and pepperoni slices"
+},{
+  "_id": {
+    "$oid": "63fe231c6dbce2dae68b80d5"
+  },
+  "name": "Veggie Supreme",
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 8.99
+    },
+    {
+      "name": "Medium",
+      "price": 13.99
+    },
+    {
+      "name": "Large",
+      "price": 18.99
+    }
+  ],
+  "category": "Veg",
+  "description": "Tomato sauce, cheese, mushrooms, onions, green peppers, and black olives"
+},{
+  "_id": {
+    "$oid": "63fe231c6dbce2dae68b80d6"
+  },
+  "name": "Meat Lovers",
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 9.99
+    },
+    {
+      "name": "Medium",
+      "price": 14.99
+    },
+    {
+      "name": "Large",
+      "price": 19.99
+    }
+  ],
+  "category": "Non-Veg",
+  "description": "Tomato sauce, cheese, pepperoni, ham, bacon, and Italian sausage"
+},{
+  "_id": {
+    "$oid": "63fe231c6dbce2dae68b80d7"
+  },
+  "name": "Hawaiian",
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 8.99
+    },
+    {
+      "name": "Medium",
+      "price": 13.99
+    },
+    {
+      "name": "Large",
+      "price": 18.99
+    }
+  ],
+  "category": "Non-Veg",
+  "description": "Tomato sauce, cheese, ham, and pineapple"
+},{
+  "_id": {
+    "$oid": "63fe231c6dbce2dae68b80d8"
+  },
+  "name": "BBQ Chicken",
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 9.99
+    },
+    {
+      "name": "Medium",
+      "price": 14.99
+    },
+    {
+      "name": "Large",
+      "price": 19.99
+    }
+  ],
+  "category": "Non-Veg",
+  "description": "BBQ sauce, cheese, grilled chicken, and onions"
+},{
+  "_id": {
+    "$oid": "63fe231c6dbce2dae68b80d9"
+  },
+  "name": "Mushroom",
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 7.99
+    },
+    {
+      "name": "Medium",
+      "price": 12.99
+    },
+    {
+      "name": "Large",
+      "price": 16.99
+    }
+  ],
+  "category": "Veg",
+  "description": "Tomato sauce, cheese, and fresh mushrooms"
+},{
+  "_id": {
+    "$oid": "63fe231c6dbce2dae68b80da"
+  },
+  "name": "Spinach & Feta",
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 8.99
+    },
+    {
+      "name": "Medium",
+      "price": 13.99
+    },
+    {
+      "name": "Large",
+      "price": 18.99
+    }
+  ],
+  "category": "Veg",
+  "description": "Tomato sauce, cheese, spinach, and feta cheese"
+}]

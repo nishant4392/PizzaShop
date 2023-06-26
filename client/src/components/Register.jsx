@@ -3,8 +3,10 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../redux/actions/userAction';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
+    const navigate=useNavigate();
     const dispatch=useDispatch();
     const [name,setName]=useState("");
     const [email,setEmail]=useState("");
@@ -13,9 +15,14 @@ const Register = () => {
 
     const makeUser=()=>{
         if(name && email && password){
-            console.log("found all");
-            dispatch(addUser(name,email,password));
-            setErior(false);
+            if(email.endsWith("@gmail.com")){
+                dispatch(addUser(name,email,password));
+                setErior(false);
+                navigate("/");
+            }
+            else{
+                alert("please input valid email with @gamil.com");
+            }      
         }
         else{
             setErior(true);

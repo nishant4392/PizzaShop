@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.blue-border{
+  border:2px solid blue;
+}
+
 /* topbar component */
 .topbar {
   margin: 0;
@@ -22,6 +26,8 @@
 .right {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  height: fit-content;
 }
 
 .left p {
@@ -29,12 +35,28 @@
 }
 
 .topbar-p {
-  /* border: 2px solid red; */
   margin: 0;
   padding: 0;
   text-align: center;
-  font-size: 1.2vw;
+  /* font-size: 1.2vw; */
   color: white;
+  }
+
+  @media (max-width:800px) {
+    .topbar{
+      display: block;
+    }
+    .left p{
+      text-align: center;
+    }
+  }
+  @media (max-width:550px) {
+    .right{
+      display: block;
+    }
+    .topbar{
+      height: fit-content;
+    }
   }
 
 .cart-card{
@@ -127,7 +149,6 @@
 .contact {
   margin: 0;
   padding: 0;
-  border: 2px solid red;
   width: 100vw;
   min-height: fit-content;
 }
@@ -142,7 +163,7 @@
 }
 
 .contact-left {
-  border: 2px solid red;
+
 }
 
 .contact-right {
@@ -159,7 +180,6 @@
 .contact-down {
   width: 90vw;
   margin: auto;
-  border: 2px solid red;
   padding: 0;
 }
 .contact-table {
@@ -202,6 +222,7 @@
   text-align: center;
   margin: 0;
   padding: 0;
+  width: 100px;
 }
 
 .policy-nav-right button{
@@ -217,9 +238,9 @@
   padding-left: 10%;
 }
 
-.policy-nav p{
+/* .policy-nav p{
   font-size:1.2vw;
-}
+} */
 
 .policy-content{
   margin-top: 4%;
@@ -228,6 +249,20 @@
 
 .policy-content h2{
   margin-bottom: 2%;
+}
+
+@media (max-width:550px) {
+  .policy-nav{
+    display: block;
+  }
+  .policy-nav-left p{
+    text-align: center;
+  }
+  .policy-nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .pizza{
@@ -391,6 +426,7 @@
 
 .all-users{
   text-align: center;
+  overflow-x: scroll;
 }
 
 .all-user-delete{

@@ -40,13 +40,13 @@ const Navbar = () => {
                         user.show ?
                             user.isAdmin ?
                                 <>
-                                    <Link to="/admin-panel" ><p>Admin</p></Link>
-                                    <Link to="/"><p onClick={loggingOutUser}>Log Out</p></Link>
+                                    <Link to="/admin-panel" ><p className=''>Admin</p></Link>
+                                    <Link to="/"><p className='' onClick={loggingOutUser}>Log Out</p></Link>
                                 </> :
                                 <>
-                                    <Link to="/cart" ><p>Cart-{cartLength}</p></Link>
-                                    <Link to="/orders" ><p>Orders</p></Link>
-                                    <Link to="/"><p onClick={loggingOutUser}>Log Out</p></Link>
+                                    <Link to="/cart" ><p className=''>Cart-{cartLength}</p></Link>
+                                    <Link to="/orders" ><p className=''>Orders</p></Link>
+                                    <Link to="/"><p className='' onClick={loggingOutUser}>Log Out</p></Link>
                                 </>:
                                 console.log("no user")
                     }
